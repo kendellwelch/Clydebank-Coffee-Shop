@@ -33,7 +33,16 @@
 </nav>
 <main>
     <div class="container">
-
+        <h1>Contact Us</h1>
+        <form action="contact.html" method="POST">
+            <label for="name">Name</label><br>
+            <input type="text" name="name" required><br><br>
+            <label for="email">Email</label><br>
+            <input type="email" name="email" required><br><br>
+            <label for="message">Message</label><br>
+            <textarea name="message" cols="60" rows="5" maxlength="2000" required></textarea><br><br>
+            <input type="submit" name="submit" value="Send Message">
+        </form>
     </div>
 </main>
 <footer>
