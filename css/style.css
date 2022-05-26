@@ -222,3 +222,49 @@ footer a { color: cornsilk; }
     background: url('../images/sprite.png') -320px 0;
 }
 
+@media only screen 
+and (min-device-width: 375px)
+and (max-device-width: 750px) {
+
+/* reduce padding in main element */
+
+main {padding: 5px; }
+
+/* fix nav bar */
+
+nav { height: 35px; }
+nav ul { padding-top: 7px; }
+nav li { display: inline; }
+nav li a { color: white; }
+
+/* add extra spacing between menu items. */
+.menu-item {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.title-item h2 { font-size: 1em; }
+
+/* fix add on item */
+.menu-item.additional-items h2 {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    width: 100%;
+    float: none;
+}
+
+/* reduce footer header size and add some padding */
+
+footer h2 {
+    font-size: 1.4em;
+    padding-top: 3px;
+    padding-bottom: 3px;
+}
+
+/* reduce size of footer text to avoid awkward wrapping */ 
+    footer li { font-size: 0.85em; }
+
+    /* add padding to bottom of footer */
+
+footer { padding-bottom:  5px; }
+}
